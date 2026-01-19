@@ -1,0 +1,27 @@
+plugins {
+    id 'java-library' // установили язык проекта
+}
+
+repositories {
+    mavenCentral() // это "Maven Central Repository" - хранилище для всех проектов - Java
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8' // стандартный формат записи текста
+}
+
+dependencies {
+    testImplementation(
+            "com.codeborne:selenide:7.12.3", // работаем с Selenide (библиотека)
+            "org.junit.jupiter:junit-jupiter:6.0.2",  // работаем с JUnit 6 (библиотека)
+            "org.junit.platform:junit-platform-launcher"
+    )
+}
+
+test {
+    useJUnitPlatform{ // функция указывает, что мы используем JUnit
+
+        systemProperty "env", "prod"
+
+    }
+}
