@@ -84,12 +84,12 @@ public class Snippets {
       Selenide.closeWebDriver(); // закрыть все окна браузера
 
       Selenide.switchTo().frame("new"); // прешли в фрейм ('фрейм'-независимое дом-дерево)
-      Selenide.switchTo().defaultContent(); // 'defaultContent' - перешли к главномe дереву страницы
+      Selenide.switchTo().defaultContent(); // 'defaultContent' - перешли к главному дереву страницы
 
       Selenide.switchTo().window("The Internet"); // перейти в предыдущее окно
 
-      var cookie = new Cookie("foo", "bar"); // определили куки
-      WebDriverRunner.getWebDriver().manage().addCookie(cookie); // getWebDriver - достает объект WebDriver
+//      var cookie = new Cookie("foo", "bar"); // определили куки
+//      WebDriverRunner.getWebDriver().manage().addCookie(cookie); // getWebDriver - достает объект WebDriver
 
 
     }
@@ -176,7 +176,7 @@ public class Snippets {
     // ЧТО ИМЕННО ПРОВЕРЯЕМ
     void conditions_examples() {
       $("").shouldBe(visible); // (содержит condition) проверка на видимость
-      $("").shouldBe(hidden); //(содержит condition) должен быть не видим
+      $("").shouldBe(hidden); // (содержит condition) должен быть не видим
 
 
       $("").shouldHave(text("abc")); // (содержит condition) должен содержать текст

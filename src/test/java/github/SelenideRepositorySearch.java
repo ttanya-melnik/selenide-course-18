@@ -22,7 +22,7 @@ public class SelenideRepositorySearch { // делает метод доступ�
   @BeforeAll
   static void configure() { // статический метод, который не возвращает значения
     Configuration.timeout = 15000;           // 15 секунд — GitHub иногда медленно грузится
-    Configuration.browserSize = "1440x900";  // задали размер окна браузера
+    Configuration.browserSize = "1920x1080";  // задали размер окна браузера
     Configuration.holdBrowserOpen = true;  // чтобы браузер не закрывался после прогона
   }
 
