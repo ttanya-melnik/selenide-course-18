@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="github.BestContributorToSelenide" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-01-27T09:08:20" hostname="DESKTOP-6VLQT67" time="10.359">
+  <properties/>
+  <testcase name="andreiSolntsevShouldBeTheFirstContributor1()" classname="github.BestContributorToSelenide" time="10.359">
+    <failure message="Element should be visible {div[class='Popover js-hovercard-content position-absolute']}&#13;&#10;Element: '&lt;div class=&quot;Popover js-hovercard-content position-absolute&quot; displayed:false&gt;&lt;/div&gt;'&#13;&#10;Actual value: hidden&#13;&#10;Screenshot: file:/D:/Idea_Project/selenide-course-18/build/reports/tests/1769504911005.0.png&#13;&#10;Page source: file:/D:/Idea_Project/selenide-course-18/build/reports/tests/1769504911005.0.html&#13;&#10;Timeout: 5 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible {div[class='Popover js-hovercard-content position-absolute']}
+Element: '&lt;div class=&quot;Popover js-hovercard-content position-absolute&quot; displayed:false&gt;&lt;/div&gt;'
+Actual value: hidden
+Screenshot: file:/D:/Idea_Project/selenide-course-18/build/reports/tests/1769504911005.0.png
+Page source: file:/D:/Idea_Project/selenide-course-18/build/reports/tests/1769504911005.0.html
+Timeout: 5 s.
+	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:146)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:123)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:99)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:24)
+	at app//com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:27)
+	at app//com.codeborne.selenide.FluentCommand.execute(FluentCommand.java:19)
+	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:161)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83)
+	at app/jdk.proxy3/jdk.proxy3.$Proxy30.shouldBe(Unknown Source)
+	at app//github.BestContributorToSelenide.andreiSolntsevShouldBeTheFirstContributor1(BestContributorToSelenide.java:34)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+янв. 27, 2026 12:08:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 142; Please update to a Selenium version that supports CDP version 144
+]]></system-err>
+</testsuite>
