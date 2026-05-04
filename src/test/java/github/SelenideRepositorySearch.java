@@ -1,5 +1,6 @@
 package github; // название пакета
 
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
@@ -26,7 +27,8 @@ public class SelenideRepositorySearch { // делает метод доступ�
     Configuration.holdBrowserOpen = true;  // чтобы браузер не закрывался после прогона
   }
 
-  @Test // аннотация
+  @Test
+    // аннотация
   void shouldFindSelenideRepositoryAtTheTop() {
 
     // открыть главную страницу

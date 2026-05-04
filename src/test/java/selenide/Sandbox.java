@@ -1,5 +1,6 @@
 package selenide;
 
+
 import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Condition.enabled;
 import static com.codeborne.selenide.Condition.exactOwnText;
@@ -14,6 +15,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.actions;
 import static com.codeborne.selenide.Selenide.open;
+
 import com.codeborne.selenide.ClipboardConditions;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
@@ -22,7 +24,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledIfSystemProperty;
 import org.openqa.selenium.Keys;
 
-
 public class Sandbox {  // класс, и класс (контейнер для методов-тестов), имя класса
 
 
@@ -30,7 +31,8 @@ public class Sandbox {  // класс, и класс (контейнер для 
 
   //  ЗАКРЫТИЕ COOKIE-ПОПАПА
 
-  @Test // аннотация
+  @Test
+    // аннотация
   void closeCookiePopup() { // метод, который ничего не возвращает и имя теста
     open("https://www.otpbank.ru/retail/bank-services/"); // открыть браузер
 
